@@ -77,12 +77,12 @@ All money calculations use `decimal.js`; formatting and charting happen after de
 
 ```mermaid
 flowchart LR
-  UI[Next.js dashboard] --> E[Deterministic risk engine]
-  UI --> A[/api/market/sici]
-  A --> V[Metadata validator]
-  V --> LCD[Official Injective LCD]
-  E --> C[Scenario comparison]
-  V --> P[Provenance state]
+  UI["Next.js dashboard"] --> E["Deterministic risk engine"]
+  UI --> A["API: /api/market/sici"]
+  A --> V["Metadata validator"]
+  V --> LCD["Official Injective LCD"]
+  E --> C["Scenario comparison"]
+  V --> P["Provenance state"]
   C --> UI
   P --> UI
 ```
